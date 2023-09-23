@@ -1,6 +1,6 @@
 # Khatmah
 
-![Khatmah Logo](khatmah-logo.png)
+![Khatmah Logo](./dist/images/Khatmah.png)
 
 ## Project Description
 
@@ -12,12 +12,16 @@
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Features](#features)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
+- [Khatmah](#khatmah)
+  - [Project Description](#project-description)
+  - [Project Slogan](#project-slogan)
+  - [Table of Contents](#table-of-contents)
+  - [Introduction](#introduction)
+  - [Features](#features)
+  - [Getting Started](#getting-started)
+  - [Usage](#usage)
+  - [Contributing](#contributing)
+  - [License](#license)
 
 ## Introduction
 
