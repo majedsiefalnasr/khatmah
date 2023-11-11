@@ -133,6 +133,23 @@ body {
 }
 /* Small devices (landscape phones, less than 768px) */
 @media (max-width: 767.98px) {
+  #main_navbar {
+    width: 100%;
+    padding: 12px 12px 12px 24px;
+    margin: 0 !important;
+    background: #ffffffa3;
+    backdrop-filter: blur(10px);
+
+    mask: paint(squircle);
+    mask-image: paint(squircle);
+    -webkit-mask: paint(squircle);
+    -webkit-mask-size: 100%;
+    mask-size: 100%;
+    -webkit-mask-repeat: no-repeat;
+    mask-repeat: no-repeat;
+    --squircle-smooth: 0.6;
+    --squircle-radius: 20px;
+  }
 }
 
 /* Header */
