@@ -12,6 +12,13 @@
   --button-primary_hover_color: #0e523f;
 }
 
+/* mobile fix */
+@media (pointer: coarse) {
+  .container {
+    overflow-x: hidden !important;
+  }
+}
+
 /* Ensure that the body takes up the full viewport height */
 html,
 body {
