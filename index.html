@@ -977,44 +977,47 @@
             </div>
 
             <div class="col-12 col-md-6">
-              <div class="mb-3">
-                <label for="client_name" class="form-label text-secondary">Full Name</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="client_name"
-                  placeholder="First, Last"
-                />
-              </div>
-              <div class="mb-3">
-                <label for="client_email" class="form-label text-secondary">Email address</label>
-                <input
-                  type="email"
-                  class="form-control"
-                  id="client_email"
-                  placeholder="your_mail@example.com"
-                />
-              </div>
-              <div class="mb-5">
-                <label for="client_course" class="form-label text-secondary">Course</label>
-                <select class="form-select" id="client_course" aria-label="Select Course">
-                  <option selected>Select Course</option>
-                  <option value="Memorizing_quran">Memorizing Quran</option>
-                  <option value="tajweed">Tajweed</option>
-                  <option value="igaza_reading">Igaza (reading)</option>
-                  <option value="igaza_memorizing_hifz)">Igaza (Memorizing-Hifz)</option>
-                  <option value="arabic_conversation">Arabic conversation</option>
-                  <option value="arabic_for_kids">Arabic for Kids</option>
-                </select>
-              </div>
-              <div class="text-center">
-                <button class="btn btn-primary btn-lg w-100 mb-2" data-href="">
-                  Start Your Journey
-                </button>
-                <p class="text-secondary small">
-                  Free 2 sessions without a credit card or hidden fees.
-                </p>
-              </div>
+              <form action="#" id="registrationForm" onsubmit="submitForm();return false">
+                <div class="mb-3">
+                  <label for="client_name" class="form-label text-secondary">Full Name</label>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="client_name"
+                    placeholder="First, Last"
+                    tabindex="0"
+                    required
+                  />
+                  <div class="invalid-feedback">Please enter your name.</div>
+                </div>
+                <div class="mb-5">
+                  <label for="client_course" class="form-label text-secondary">Course</label>
+                  <select
+                    class="form-select"
+                    id="client_course"
+                    aria-label="Select Course"
+                    tabindex="1"
+                    required
+                  >
+                    <option value="" selected>Select Course</option>
+                    <option value="Memorizing quran">Memorizing Quran</option>
+                    <option value="Tajweed">Tajweed</option>
+                    <option value="Igaza (Reading)">Igaza (reading)</option>
+                    <option value="Igaza (Memorizing Hifz)">Igaza (Memorizing-Hifz)</option>
+                    <option value="Arabic Conversation">Arabic conversation</option>
+                    <option value="Arabic for Kids">Arabic for Kids</option>
+                  </select>
+                  <div class="invalid-feedback">Please select a valid course.</div>
+                </div>
+                <div class="text-center">
+                  <button class="btn btn-primary btn-lg w-100 mb-2" data-submit>
+                    Start Your Journey
+                  </button>
+                  <p class="text-secondary small">
+                    Free 2 sessions without a credit card or hidden fees.
+                  </p>
+                </div>
+              </form>
             </div>
           </div>
         </section>
@@ -1050,22 +1053,32 @@
                 <h5 class="small text-secondary">Courses</h5>
                 <ul class="list-unstyled text-small">
                   <li class="mb-1">
-                    <a class="link-dark text-decoration-none" href="#">Memorizing Quran</a>
+                    <a class="link-dark text-decoration-none" href="#explor_cources"
+                      >Memorizing Quran</a
+                    >
                   </li>
                   <li class="mb-1">
-                    <a class="link-dark text-decoration-none" href="#">Tajweed</a>
+                    <a class="link-dark text-decoration-none" href="#explor_cources">Tajweed</a>
                   </li>
                   <li class="mb-1">
-                    <a class="link-dark text-decoration-none" href="#">Igaza (reading)</a>
+                    <a class="link-dark text-decoration-none" href="#explor_cources"
+                      >Igaza (reading)</a
+                    >
                   </li>
                   <li class="mb-1">
-                    <a class="link-dark text-decoration-none" href="#">Igaza (Memorizing-Hifz)</a>
+                    <a class="link-dark text-decoration-none" href="#explor_cources"
+                      >Igaza (Memorizing-Hifz)</a
+                    >
                   </li>
                   <li class="mb-1">
-                    <a class="link-dark text-decoration-none" href="#">Arabic conversation</a>
+                    <a class="link-dark text-decoration-none" href="#explor_cources"
+                      >Arabic conversation</a
+                    >
                   </li>
                   <li class="mb-1">
-                    <a class="link-dark text-decoration-none" href="#">Arabic for Kids</a>
+                    <a class="link-dark text-decoration-none" href="#explor_cources"
+                      >Arabic for Kids</a
+                    >
                   </li>
                 </ul>
               </div>
@@ -1073,10 +1086,12 @@
                 <h5 class="small text-secondary">Support</h5>
                 <ul class="list-unstyled text-small">
                   <li class="mb-1">
-                    <a class="link-dark text-decoration-none" href="#">Help center</a>
+                    <a class="link-dark text-decoration-none" href="#explor_cources">Help center</a>
                   </li>
                   <li class="mb-1">
-                    <a class="link-dark text-decoration-none" href="#">Talk to support</a>
+                    <a class="link-dark text-decoration-none" href="#explor_cources"
+                      >Talk to support</a
+                    >
                   </li>
                 </ul>
               </div>

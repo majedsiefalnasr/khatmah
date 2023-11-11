@@ -78,4 +78,54 @@ document.addEventListener('DOMContentLoaded', function () {
       scrollToTarget(targetID, targetOffset);
     });
   });
+
+  /////////////////////////////////////////////////////////////////////
+  // Send whatsapp message on submit
+  const submitAction = document.querySelector('[data-submit]');
+
+  if (submitAction) {
+    const client_name = document.getElementById('client_name'),
+      client_course = document.getElementById('client_course');
+
+    // submitAction.addEventListener('click', () => {
+    //   const form = document.getElementById('registrationForm');
+
+    //   var rrr = 0;
+
+    //   form.addEventListener('submit', function (event) {
+    //     event.preventDefault();
+    //     event.stopPropagation();
+
+    //     form.classList.add('was-validated');
+
+    //     if (form.checkValidity() === true) {
+    //       console.log(rrr);
+
+    //       window.open(
+    //         `https://wa.me/201070604054?text=Hi, I'm ` +
+    //           client_name.value +
+    //           ` I'm interested in ` +
+    //           client_course.value +
+    //           ` cource`,
+    //         '_blank',
+    //       );
+
+    //       rrr++;
+    //     }
+    //   });
+    // });
+  }
 });
+
+const client_name = document.getElementById('client_name'),
+  client_course = document.getElementById('client_course');
+function submitForm() {
+  window.open(
+    `https://wa.me/201070604054?text=Hi, I'm ` +
+      client_name.value +
+      ` I'm interested in ` +
+      client_course.value +
+      ` cource`,
+    '_blank',
+  );
+}
